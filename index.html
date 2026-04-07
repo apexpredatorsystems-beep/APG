@@ -264,7 +264,10 @@ canvas{display:block;width:100%;cursor:crosshair;border-radius:10px;border:1px s
 <!-- TRAIN SETUP -->
 <div id="S_trainsetup" class="scr">
   <div class="ph">
-    <button class="bk" onclick="G('home');refreshHome();">← HOME</button>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+      <button class="bk" style="margin-bottom:0;" onclick="G('train');setTrainTab('practice');">← BACK</button>
+      <button class="bk" style="margin-bottom:0;" onclick="G('home');refreshHome();">⌂ HOME</button>
+    </div>
     <div class="pt">NEW SESSION</div>
     <div class="ps" id="ts_sub">Set up your training session</div>
   </div>
